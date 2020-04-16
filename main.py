@@ -22,10 +22,7 @@ def main():
     style_img, content_img = style_img.to(cfg.device), content_img.to(cfg.device)
 
     # Image to be optimized
-    opt_img = Variable(
-        torch.randn(content_img.size()).type_as(content_img.data), requires_grad=True
-    ).to(cfg.device)
-    # opt_img = Variable(content_img.data.clone(), requires_grad=True)
+    opt_img = Variable(content_img.data.clone(), requires_grad=True)
 
     # Load model and features
     model = VGG16().to(cfg.device)

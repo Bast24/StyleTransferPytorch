@@ -54,6 +54,6 @@ CONTENT_WEIGHTS = [1e0]
 ###################
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-max_iter = 500
+max_iter = 1000
 show_every = 50
 img_size = 800
