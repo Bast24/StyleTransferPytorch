@@ -6,3 +6,14 @@ Style Transfer playground using Pytorch. Basic implementation of the paper [Imag
 ## Usage
 
 First, download the weights of the VGG-19 model used by the authors [here](https://bethgelab.org/media/uploads/pytorch_models/vgg_conv.pth). Then, simply run `python main.py`. You can change the parameters in the file `config.py`.
+
+## Example
+
+Content image:
+![Content](./data/content.jpg)
+
+Style image:
+![Style](./data/style.jpg)
+
+output image:
+![Output](./data/output.jpg)
